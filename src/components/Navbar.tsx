@@ -64,12 +64,12 @@ export default function Navbar() {
               className="group flex w-full min-w-0 items-center gap-3 sm:w-auto sm:gap-3.5 focus:outline-none"
               aria-label="Century Convention Centre Homepage"
             >
-              {/* Century Logo */}
-              <div className="relative flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden sm:h-40 sm:w-40">
+              {/* Century Logo — medium size, centered */}
+              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden sm:h-16 sm:w-16">
                 <img
                   src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
                   alt="Century Convention Centre"
-                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-[66%]"
+                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-1/2"
                 />
               </div>
               {/* Brand text */}
