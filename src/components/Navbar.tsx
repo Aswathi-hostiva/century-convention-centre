@@ -57,23 +57,23 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-y-2 sm:flex-nowrap">
             {/* Century Logo + CENTURY CONVENTION CENTRE */}
             <a
               href="#hero"
-              className="group flex items-center gap-3 sm:gap-3.5 focus:outline-none"
+              className="group flex w-full min-w-0 items-center gap-3 sm:w-auto sm:gap-3.5 focus:outline-none"
               aria-label="Century Convention Centre Homepage"
             >
               {/* Century Logo */}
-             <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12">
-            <img
-            src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
-             alt="Century Convention Centre"
-             className="w-50 h-50 sm:w-50 sm:h-50 object-contain"
-                 />
-               </div>
+              <div className="relative flex h-32 w-32 shrink-0 items-center justify-center sm:h-40 sm:w-40">
+                <img
+                  src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
+                  alt="Century Convention Centre"
+                  className="h-full w-full object-contain"
+                />
+              </div>
               {/* Brand text */}
-              <div className="flex flex-col">
+              <div className="flex min-w-0 flex-1 flex-col">
                 <span className="font-serif-luxury text-base sm:text-lg md:text-xl font-bold tracking-wider text-white uppercase group-hover:text-[#f3e5ab] transition-colors leading-tight">
                   CENTURY CONVENTION CENTRE
                 </span>
