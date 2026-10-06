@@ -69,7 +69,7 @@ export default function Navbar() {
             <img
             src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
              alt="Century Convention Centre"
-             className="w-40 h-40 sm:w-40 sm:h-40 object-contain"
+             className="w-50 h-50 sm:w-50 sm:h-50 object-contain"
                  />
                </div>
               {/* Brand text */}
