@@ -108,14 +108,14 @@ export default function Footer() {
                 Follow our official social media pages for recent event highlights, stage designs, and celebrations.
               </p>
 
-              {/* Official Instagram Gradient & Facebook Blue Icons */}
+              {/* Official social media links */}
               <div className="flex items-center gap-5 lg:justify-end">
                 {/* Instagram Gradient Icon */}
                 <a
                   href="https://www.instagram.com/centuryconventioncentre?stkn=MTd2cXBhMDQ5N3V1bA=="
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex items-center gap-3 p-3 rounded-2xl bg-[#0f1420] border border-[#232c3f] hover:border-[#d4af37]/60 transition-all duration-300 shadow-md hover:scale-105"
+                  className="group relative flex items-center justify-center p-3 rounded-2xl bg-[#0f1420] border border-[#232c3f] hover:border-[#d4af37]/60 transition-all duration-300 shadow-md hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]"
                   aria-label="Century Convention Centre Instagram Profile"
                 >
                   {/* Original Instagram Gradient SVG */}
@@ -147,14 +147,6 @@ export default function Footer() {
                     <circle cx="12" cy="12" r="3.7" stroke="#ffffff" strokeWidth="1.8" />
                     <circle cx="16.5" cy="7.5" r="1.1" fill="#ffffff" />
                   </svg>
-                  <div className="text-left pr-2">
-                    <span className="text-[11px] font-semibold text-white group-hover:text-[#f3e5ab] block">
-                      Instagram
-                    </span>
-                    <span className="text-[10px] text-[#94a3b8] block">
-                      @centuryconventioncentre
-                    </span>
-                  </div>
                 </a>
 
                 {/* Facebook Official Blue Icon */}
@@ -162,8 +154,8 @@ export default function Footer() {
                   href="https://www.facebook.com/share/19naxcGYGK/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex items-center gap-3 p-3 rounded-2xl bg-[#0f1420] border border-[#232c3f] hover:border-[#1877F2]/60 transition-all duration-300 shadow-md hover:scale-105"
-                  
+                  className="group relative flex items-center justify-center p-3 rounded-2xl bg-[#0f1420] border border-[#232c3f] hover:border-[#1877F2]/60 transition-all duration-300 shadow-md hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1877F2]"
+                  aria-label="Century Convention Centre Facebook Profile"
                 >
                   {/* Original Facebook Blue SVG */}
                   <svg
@@ -178,14 +170,6 @@ export default function Footer() {
                       fill="#ffffff"
                     />
                   </svg>
-                  <div className="text-left pr-2">
-                    <span className="text-[11px] font-semibold text-white group-hover:text-blue-300 block">
-                      Facebook
-                    </span>
-                    <span className="text-[10px] text-[#94a3b8] block">
-                      Century Convention
-                    </span>
-                  </div>
                 </a>
               </div>
             </div>
