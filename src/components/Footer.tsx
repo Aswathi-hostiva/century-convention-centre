@@ -163,7 +163,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative flex items-center gap-3 p-3 rounded-2xl bg-[#0f1420] border border-[#232c3f] hover:border-[#1877F2]/60 transition-all duration-300 shadow-md hover:scale-105"
-                  aria-label="Century Convention Centre Facebook Page"
+                  
                 >
                   {/* Original Facebook Blue SVG */}
                   <svg

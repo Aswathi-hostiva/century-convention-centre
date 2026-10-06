@@ -65,44 +65,13 @@ export default function Navbar() {
               aria-label="Century Convention Centre Homepage"
             >
               {/* Century Logo */}
-              <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#1c2230] via-[#0d111a] to-[#05070a] border border-[#d4af37]/40 shadow-md group-hover:border-[#d4af37] transition-all duration-300">
-                <div className="absolute inset-0 rounded-xl bg-[#d4af37]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <svg
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-[#d4af37]"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="20"
-                    cy="20"
-                    r="18"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeDasharray="2 3"
-                    className="opacity-60"
-                  />
-                  <path
-                    d="M26 14C24.5 12.5 22.5 11.5 20 11.5C15.3056 11.5 11.5 15.3056 11.5 20C11.5 24.6944 15.3056 28.5 20 28.5C22.5 28.5 24.5 27.5 26 26"
-                    stroke="url(#goldGradNavbar)"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                  />
-                  <polygon
-                    points="20,15 21.5,18.5 25,19 22.5,21.5 23,25 20,23 17,25 17.5,21.5 15,19 18.5,18.5"
-                    fill="#d4af37"
-                    className="opacity-70 scale-50 origin-center"
-                  />
-                  <defs>
-                    <linearGradient id="goldGradNavbar" x1="11" y1="11" x2="28" y2="28">
-                      <stop stopColor="#FCEBC2" />
-                      <stop offset="0.5" stopColor="#D4AF37" />
-                      <stop offset="1" stopColor="#AA8032" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-
+             <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12">
+            <img
+            src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
+             alt="Century Convention Centre"
+             className="w-11 h-11 sm:w-12 sm:h-12 object-contain"
+                 />
+               </div>
               {/* Brand text */}
               <div className="flex flex-col">
                 <span className="font-serif-luxury text-base sm:text-lg md:text-xl font-bold tracking-wider text-white uppercase group-hover:text-[#f3e5ab] transition-colors leading-tight">
