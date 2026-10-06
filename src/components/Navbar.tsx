@@ -52,24 +52,24 @@ export default function Navbar() {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "glass-nav py-3.5 shadow-xl border-b border-[#d4af37]/20"
-            : "bg-[#080a0f]/90 backdrop-blur-md py-4 border-b border-white/5"
+            ? "glass-nav py-2 shadow-xl border-b border-[#d4af37]/20"
+            : "bg-[#080a0f]/90 backdrop-blur-md py-2 border-b border-white/5"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
           <div className="flex flex-wrap items-center justify-between gap-y-2 sm:flex-nowrap">
             {/* Century Logo + CENTURY CONVENTION CENTRE */}
             <a
               href="#hero"
-              className="group flex w-full min-w-0 items-center gap-3 sm:w-auto sm:gap-3.5 focus:outline-none"
+              className="group flex w-full min-w-0 items-center gap-2 sm:w-auto sm:gap-2.5 focus:outline-none"
               aria-label="Century Convention Centre Homepage"
             >
-              {/* Century Logo — medium size, centered */}
-              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden sm:h-16 sm:w-16">
+              {/* Century Logo */}
+              <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden sm:h-24 sm:w-24">
                 <img
                   src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
                   alt="Century Convention Centre"
-                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-1/2"
+                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-[40%]"
                 />
               </div>
               {/* Brand text */}
