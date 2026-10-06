@@ -65,15 +65,15 @@ export default function Navbar() {
               aria-label="Century Convention Centre Homepage"
             >
               {/* Century Logo */}
-              <div className="relative flex h-32 w-32 shrink-0 items-center justify-center sm:h-40 sm:w-40">
+              <div className="relative flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden sm:h-40 sm:w-40">
                 <img
                   src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
                   alt="Century Convention Centre"
-                  className="h-full w-full object-contain"
+                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-[66%]"
                 />
               </div>
               {/* Brand text */}
-              <div className="flex min-w-0 flex-1 flex-col">
+              <div className="flex w-0 min-w-0 flex-1 flex-col sm:w-auto sm:flex-none">
                 <span className="font-serif-luxury text-base sm:text-lg md:text-xl font-bold tracking-wider text-white uppercase group-hover:text-[#f3e5ab] transition-colors leading-tight">
                   CENTURY CONVENTION CENTRE
                 </span>
