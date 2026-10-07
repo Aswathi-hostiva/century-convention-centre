@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top micro bar for quick access */}
+      {/* Top micro bar */}
       <div className="hidden sm:block bg-[#05070a] border-b border-[#222938] text-xs text-[#94a3b8] py-2 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-6">
@@ -57,33 +57,31 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex flex-wrap items-center justify-between gap-y-2 sm:flex-nowrap">
-            {/* Century Logo + CENTURY CONVENTION CENTRE */}
+          <div className="flex items-center justify-between">
+            {/* Logo + Brand text */}
             <a
               href="#hero"
-              className="group flex w-full min-w-0 items-center gap-2 sm:w-auto sm:gap-2.5 focus:outline-none"
+              className="group flex items-center gap-2 sm:gap-3 focus:outline-none"
               aria-label="Century Convention Centre Homepage"
             >
-              {/* Century Logo */}
-              <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden sm:h-24 sm:w-24">
-                <img
-                  src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
-                  alt="Century Convention Centre"
-                  className="absolute left-1/2 top-1/2 h-auto w-[140%] max-w-none -translate-x-1/2 -translate-y-[40%]"
-                />
-              </div>
+              {/* Logo — clean contain, no crop */}
+              <img
+                src="/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg"
+                alt="Century Convention Centre"
+                className="h-14 w-14 sm:h-16 sm:w-16 object-contain shrink-0"
+              />
               {/* Brand text */}
-              <div className="flex w-0 min-w-0 flex-1 flex-col sm:w-auto sm:flex-none">
-                <span className="font-serif-luxury text-base sm:text-lg md:text-xl font-bold tracking-wider text-white uppercase group-hover:text-[#f3e5ab] transition-colors leading-tight">
+              <div className="flex flex-col">
+                <span className="font-serif-luxury text-sm sm:text-base md:text-lg font-bold tracking-wider text-white uppercase group-hover:text-[#f3e5ab] transition-colors leading-tight">
                   CENTURY CONVENTION CENTRE
                 </span>
-                <span className="text-[10px] sm:text-[11px] font-medium tracking-[0.2em] text-[#c5a880] uppercase">
+                <span className="text-[9px] sm:text-[10px] font-medium tracking-[0.2em] text-[#c5a880] uppercase">
                   Mele Chelari • Near Calicut University
                 </span>
               </div>
             </a>
 
-            {/* Enquire Now button (Desktop & Mobile) */}
+            {/* Buttons */}
             <div className="flex items-center gap-3">
               <a
                 href="tel:+919562410044"
