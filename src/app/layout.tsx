@@ -25,6 +25,12 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://centuryconventioncentre.com"),
+  icons: {
+    icon: {
+      url: "/images/WhatsApp Image 2026-10-06 at 7.39.57 PM.jpeg",
+      type: "image/jpeg",
+    },
+  },
   title: "Century Convention Centre | Mele Chelari, Near Calicut University, Kerala",
   description:
     "Where Every Occasion Becomes a Celebration. Century Convention Centre, established in 2004 at Mele Chelari, Near Calicut University, Malappuram, Kerala – 673636. Premier luxury destination for Weddings, Receptions, Engagements, Business Events & Celebrations.",
