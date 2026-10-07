@@ -11,8 +11,7 @@ import {
   MessageCircle,
   ExternalLink,
   CheckCircle,
-  Sparkles,
-  Clock,
+  Sparkles
 } from "lucide-react";
 
 const EVENT_OPTIONS = [
@@ -31,6 +30,8 @@ const EVENT_OPTIONS = [
 interface EnquiryLocationProps {
   selectedEventType?: string;
 }
+
+const formatPreferredDate = (date: string) => (date ? date.split("-").reverse().join("/") : "");
 
 export default function EnquiryLocation({ selectedEventType = "Weddings" }: EnquiryLocationProps) {
   const [formData, setFormData] = useState({
@@ -112,10 +113,6 @@ Message: ${formData.message || "Please provide date availability and details."}`
                 <p className="text-xs text-[#94a3b8] mt-1">
                   Fill in your requirements for immediate coordinator assistance.
                 </p>
-              </div>
-              <div className="hidden sm:flex items-center gap-2 text-xs text-[#c5a880] bg-[#141b29] px-3 py-1.5 rounded-lg border border-[#222c3d]">
-                <Clock className="w-3.5 h-3.5 text-[#d4af37]" />
-                <span>Prompt Response</span>
               </div>
             </div>
 
@@ -225,12 +222,24 @@ Message: ${formData.message || "Please provide date availability and details."}`
                       <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
                       <span>Preferred Date</span>
                     </label>
-                    <input
-                      type="date"
-                      value={formData.date}
-                      onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#141a26] border border-[#232d3f] text-white focus:outline-none focus:border-[#d4af37] text-sm transition-colors"
-                    />
+                    <div className="relative">
+                      <input
+                        type="text"
+                        readOnly
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        value={formatPreferredDate(formData.date)}
+                        placeholder="DD/MM/YYYY"
+                        className="w-full px-4 py-3 rounded-xl bg-[#141a26] border border-[#232d3f] text-white placeholder-gray-500 focus:outline-none focus:border-[#d4af37] text-sm transition-colors"
+                      />
+                      <input
+                        type="date"
+                        value={formData.date}
+                        onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                        aria-label="Preferred Date"
+                        className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                      />
+                    </div>
                   </div>
 
                   {/* Estimated Guests */}
