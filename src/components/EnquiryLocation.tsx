@@ -324,7 +324,7 @@ Message: ${formData.message || "Please provide date availability and details."}`
                       href="tel:+919562410044"
                       className="text-sm font-semibold text-white hover:text-[#d4af37] transition-colors block"
                     >
-                      +91 95624 10044
+                      +91 8078571484
                     </a>
                     <a
                       href="tel:+919280100400"
