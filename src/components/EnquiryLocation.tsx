@@ -232,6 +232,10 @@ Message: ${formData.message || "Please provide date availability and details."}`
                         placeholder="DD/MM/YYYY"
                         className="w-full px-4 py-3 rounded-xl bg-[#141a26] border border-[#232d3f] text-white placeholder-gray-500 focus:outline-none focus:border-[#d4af37] text-sm transition-colors"
                       />
+                      <Calendar
+                        aria-hidden="true"
+                        className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[#d4af37]"
+                      />
                       <input
                         type="date"
                         value={formData.date}
