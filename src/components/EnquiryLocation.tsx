@@ -54,15 +54,28 @@ export default function EnquiryLocation({ selectedEventType = "Weddings" }: Enqu
     }
   }, [selectedEventType]);
 
+  const getSubmitWhatsAppLink = () => {
+    const text = encodeURIComponent(
+      `Hello Century Convention Centre,
+
+New Venue Enquiry
+
+Name: ${formData.name || "Not specified"}
+Phone: ${formData.phone || "Not specified"}
+Email: ${formData.email || "Not specified"}
+Event Date: ${formatPreferredDate(formData.date) || "To be discussed"}
+Event Type: ${formData.eventType || "Not specified"}
+Guests: ${formData.guests || "Not specified"}
+Requirements: ${formData.message || "Not specified"}
+
+Please contact the customer regarding this enquiry.`
+    );
+    return `https://wa.me/918078571484?text=${text}`;
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-
-    // Simulate submission
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 600);
+    window.open(getSubmitWhatsAppLink(), "_blank", "noopener,noreferrer");
   };
 
   const getWhatsAppLink = () => {
