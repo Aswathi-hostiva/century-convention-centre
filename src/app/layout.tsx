@@ -54,10 +54,10 @@ export const metadata: Metadata = {
     siteName: "Century Convention Centre",
     images: [
       {
-        url: "/images/DJI_20260701103528_0067_D.JPG",
+        url: "/images/convention center.jpg.jpeg",
         width: 1200,
         height: 630,
-        alt: "Century Convention Centre Aerial View",
+        alt: "Century Convention Centre Grand Entrance & Facade",
       },
     ],
     locale: "en_IN",

@@ -83,11 +83,11 @@ export default function Introduction() {
                 </div>
               </div>
 
-              {/* Authentic Auditorium Seating Photo */}
+              {/* Authentic Banquet Hall Photo */}
               <div className="relative h-44 sm:h-48 w-full rounded-xl overflow-hidden mb-6 border border-[#d4af37]/25 shadow-lg group">
                 <Image
-                  src="/images/WhatsApp Image 2026-10-06 at 4.01.09 PM.jpeg"
-                  alt="Century Convention Centre Grand Auditorium Seating"
+                  src="/images/BANQUET 500 .jpg.jpeg"
+                  alt="Century Convention Centre Grand Banquet & Celebration Hall"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -95,7 +95,7 @@ export default function Introduction() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017] via-[#0c1017]/30 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                   <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#0a0d14]/85 text-[#d4af37] border border-[#d4af37]/30 backdrop-blur-sm">
-                    Grand Auditorium Seating
+                    Grand Banquet & Dining Hall
                   </span>
                   <span className="text-[10px] text-gray-300 bg-black/60 px-2 py-0.5 rounded backdrop-blur-xs">
                     Authentic Hall View

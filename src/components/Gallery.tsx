@@ -13,53 +13,67 @@ interface GalleryImage {
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: "/images/DJI_20260701103528_0067_D.JPG",
-    title: "Scenic Swimming Pool Deck & Water Stage",
-    category: "Poolside & Outdoor",
+    src: "/images/convention center.jpg.jpeg",
+    title: "Grand Entrance & Architectural Facade",
+    category: "Architecture & Facade",
     caption:
-      "Crystal-clear swimming pool with an elevated stage platform and signature Century backdrop, ideal for poolside receptions, haldi ceremonies, and twilight celebrations.",
+      "Stately illuminated evening facade of Century Convention Centre featuring contemporary gold accents, VIP arrival porch, and spacious parking courtyard.",
   },
   {
-    src: "/images/WhatsApp Image 2026-10-06 at 4.01.09 PM.jpeg",
-    title: "Grand Main Auditorium & Tiered Seating",
+    src: "/images/BANQUET 500 .jpg.jpeg",
+    title: "Grand Banquet & Celebration Hall",
+    category: "Banquet & Dining",
+    caption:
+      "Expansive air-conditioned banquet hall equipped with recessed designer ceiling lighting, banquet seating for 500+ guests, and dedicated celebration stage.",
+  },
+  {
+    src: "/images/out .jpg.jpeg",
+    title: "Century Pool Outdoor Complex & Promenade",
+    category: "Outdoor & Landscape",
+    caption:
+      "Modern architectural curved canopy, geometric wall motifs, landscaped tropical greenery, and paved promenade leading to Century Pool.",
+  },
+  {
+    src: "/images/MINI HALL 7 .jpg.jpeg",
+    title: "Mini Hall Seminar & Conference Suite",
     category: "Auditorium & Halls",
     caption:
-      "High-capacity multi-tier auditorium featuring cushioned theatre seats, acoustic-treated panelling, and expansive sightlines for regal weddings.",
+      "Sophisticated multipurpose hall arranged with premium leather cushioned seating, high-lumen digital projector, and warm acoustic wood paneling.",
   },
   {
-    src: "/images/DJI_20260701100736_0036_D.JPG",
-    title: "Century Pool Grand Entrance & Landscaped Steps",
-    category: "Architecture & Entrance",
+    src: "/images/MINI HALL 8 .jpg.jpeg",
+    title: "Mini Hall Stage & Presentation View",
+    category: "Stage & Presentation",
     caption:
-      "Stately architectural gateway and manicured lawn stairway leading up to the signature pool deck and outdoor celebration grounds.",
+      "Direct stage view showcasing professional acoustic wall curtains, integrated sound reinforcement, and theatrical stage presentation zone.",
   },
   {
-    src: "/images/DJI_20260701081514_0001_D (2).JPG",
-    title: "Paved Driveway & Welcome Courtyard",
-    category: "Courtyard & Facade",
-    caption:
-      "Spacious interlocking paved arrival driveway with contemporary facade and dedicated thematic photo niche, ensuring smooth guest arrival.",
-  },
-  {
-    src: "/images/DJI_20260701102437_0055_D.JPG",
-    title: "Overhead Bird's-Eye View of Venue Grounds",
-    category: "Aerial & Landscape",
-    caption:
-      "Spectacular drone perspective showcasing the azure pool, solar canopy architecture, and lush tropical coconut groves surrounding Mele Chelari.",
-  },
-  {
-    src: "/images/DJI_20260701102604_0057_D.JPG",
-    title: "Open Event Courtyard & Children's Play Zone",
-    category: "Courtyard & Recreation",
-    caption:
-      "Wide paved open-air courtyard surrounded by palm trees with dedicated slide and play equipment, ensuring safe entertainment for young guests.",
-  },
-  {
-    src: "/images/DJI_20260701193653_0131_D.JPG",
+    src: "/images/pool night .jpg.jpeg",
     title: "Night Illuminations & Poolside Glow",
     category: "Twilight & Ambiance",
     caption:
       "Atmospheric evening capture displaying radiant underwater pool illumination, warm architectural pathway lighting, and enchanting night gala vibes.",
+  },
+  {
+    src: "/images/pool.jpg.jpeg",
+    title: "Scenic Pool Deck & Architectural Pavilion",
+    category: "Poolside & Outdoor",
+    caption:
+      "Signature swimming pool deck at golden sunset hour and contemporary curved pavilion, ideal for poolside receptions, haldi ceremonies, and twilight celebrations.",
+  },
+  {
+    src: "/images/BANQUET ENTRY 02 .jpg.jpeg",
+    title: "Banquet Hall Foyer & Grand Entrance",
+    category: "Foyer & Reception",
+    caption:
+      "Elegant glass entrance foyer adorned with Century signature branding, warm wooden soffits, cobblestone paving, and lush botanical garden landscaping.",
+  },
+  {
+    src: "/images/MINI HALL 9 .jpg.jpeg",
+    title: "Intimate Celebration & Theatre Seating",
+    category: "Intimate Functions",
+    caption:
+      "Curated perspective of comfortable guest seating bearing the Century gold crest, ideal for engagements, family milestones, and executive meets.",
   },
 ];
 
@@ -132,11 +146,11 @@ export default function Gallery() {
           </p>
           <div className="mt-4 inline-flex items-center gap-2 text-xs font-medium text-[#c5a880] bg-[#121722] px-3.5 py-1.5 rounded-full border border-white/5">
             <Camera className="w-3.5 h-3.5 text-[#d4af37]" />
-            <span>7 Authentic On-Site Photographs</span>
+            <span>{GALLERY_IMAGES.length} Authentic On-Site Photographs</span>
           </div>
         </div>
 
-        {/* Gallery Grid - 7 Items arranged in cohesive 12-col hierarchy */}
+        {/* Gallery Grid - 9 Items arranged in cohesive 12-col hierarchy */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Row 1: Featured 1 (Span 7) - Pool Deck */}
           <div
@@ -351,6 +365,69 @@ export default function Gallery() {
                 </h3>
                 <p className="text-xs text-[#cbd5e1] line-clamp-2">
                   {GALLERY_IMAGES[6].caption}
+                </p>
+              </div>
+              <div className="w-9 h-9 rounded-full bg-[#0a0d14]/80 border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 ml-3 group-hover:scale-110 transition-transform">
+                <Maximize2 className="w-3.5 h-3.5" />
+              </div>
+            </div>
+          </div>
+
+          {/* Row 4: Duo (Span 6 each) - Banquet Entrance Foyer & Intimate Auditorium View */}
+          <div
+            onClick={() => handleOpen(7)}
+            className="md:col-span-6 group relative h-[300px] sm:h-[360px] rounded-2xl overflow-hidden cursor-pointer border border-[#1e2738] hover:border-[#d4af37]/60 transition-all duration-300 shadow-xl"
+          >
+            <Image
+              src={GALLERY_IMAGES[7].src}
+              alt={GALLERY_IMAGES[7].title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#080a0f] via-[#080a0f]/40 to-transparent opacity-85 group-hover:opacity-75 transition-opacity" />
+
+            <div className="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#d4af37] bg-[#0d121c]/90 px-3 py-1 rounded-full border border-[#d4af37]/30 inline-block mb-2">
+                  {GALLERY_IMAGES[7].category}
+                </span>
+                <h3 className="font-serif-luxury text-xl font-bold text-white mb-1">
+                  {GALLERY_IMAGES[7].title}
+                </h3>
+                <p className="text-xs text-[#cbd5e1] line-clamp-2">
+                  {GALLERY_IMAGES[7].caption}
+                </p>
+              </div>
+              <div className="w-9 h-9 rounded-full bg-[#0a0d14]/80 border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 ml-3 group-hover:scale-110 transition-transform">
+                <Maximize2 className="w-3.5 h-3.5" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            onClick={() => handleOpen(8)}
+            className="md:col-span-6 group relative h-[300px] sm:h-[360px] rounded-2xl overflow-hidden cursor-pointer border border-[#1e2738] hover:border-[#d4af37]/60 transition-all duration-300 shadow-xl"
+          >
+            <Image
+              src={GALLERY_IMAGES[8].src}
+              alt={GALLERY_IMAGES[8].title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#080a0f] via-[#080a0f]/40 to-transparent opacity-85 group-hover:opacity-75 transition-opacity" />
+
+            <div className="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#d4af37] bg-[#0d121c]/90 px-3 py-1 rounded-full border border-[#d4af37]/30 inline-block mb-2">
+                  {GALLERY_IMAGES[8].category}
+                </span>
+                <h3 className="font-serif-luxury text-xl font-bold text-white mb-1">
+                  {GALLERY_IMAGES[8].title}
+                </h3>
+                <p className="text-xs text-[#cbd5e1] line-clamp-2">
+                  {GALLERY_IMAGES[8].caption}
                 </p>
               </div>
               <div className="w-9 h-9 rounded-full bg-[#0a0d14]/80 border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 ml-3 group-hover:scale-110 transition-transform">

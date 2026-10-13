@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Phone, CalendarCheck, Sparkles, MapPin, ChevronDown, CheckCircle2 } from "lucide-react";
 
 export default function Hero() {
-  const HERO_IMAGE = "/images/DJI_20260701103528_0067_D.JPG";
+  const HERO_IMAGE = "/images/convention center.jpg.jpeg";
 
   return (
     <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={HERO_IMAGE}
-          alt="Century Convention Centre Aerial View"
+          alt="Century Convention Centre Grand Entrance & Facade"
           fill
           priority
           sizes="100vw"
